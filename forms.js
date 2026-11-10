@@ -1,0 +1,1 @@
+document.querySelectorAll('.demo-form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();f.querySelector('.form-result').textContent='Форма проверена. Учебный пример: данные никуда не отправляются.'}));

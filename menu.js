@@ -1,0 +1,1 @@
+document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{let open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',open);b.textContent=open?'×':'☰';document.getElementById(b.getAttribute('aria-controls')).classList.toggle('open',open)}));
