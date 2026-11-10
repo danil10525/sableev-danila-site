@@ -1,0 +1,81 @@
+Локальное упражнение Git
+Автор коммитов Student <student@example.invalid> — учебная подпись, не личность пользователя. Глобальные настройки не менялись.
+
+$ git init -b master
+Initialized empty Git repository in C:/Users/TOXIC-PC/Documents/Codex/2026-11-10/new-chat/outputs/Учебные работы/07-git/.git/
+
+$ git add index.html
+
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   index.html
+
+
+$ git commit -m New file index
+[master (root-commit) b45c35a] New file index
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+$ git rev-parse HEAD
+b45c35a9eef06336f8e153412ec4b8fffdddedaf
+
+$ git add index.html
+
+$ git commit -m Added Header
+[master 158abfc] Added Header
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git log --oneline
+158abfc Added Header
+b45c35a New file index
+
+$ git reset --hard b45c35a9eef06336f8e153412ec4b8fffdddedaf
+HEAD is now at b45c35a New file index
+
+$ git log --oneline
+b45c35a New file index
+
+$ git add index.html css/1.css
+
+$ git commit -m Оформили страницу
+[master ee837f9] Оформили страницу
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 css/1.css
+
+$ git branch article
+
+$ git checkout article
+Switched to branch 'article'
+
+$ git add article.html css/1.css
+
+$ git commit -m Добавили статью
+[article 88ca319] Добавили статью
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 article.html
+
+$ git checkout master
+Switched to branch 'master'
+
+$ git merge --no-ff article -m Объединили ветку article
+Merge made by the 'ort' strategy.
+ article.html | 1 +
+ css/1.css    | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 article.html
+
+$ git branch -d article
+Deleted branch article (was 88ca319).
+
+$ git log --graph --oneline --all
+*   6da2c12 Объединили ветку article
+|\  
+| * 88ca319 Добавили статью
+|/  
+* ee837f9 Оформили страницу
+* b45c35a New file index

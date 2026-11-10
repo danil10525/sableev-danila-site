@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 b45c35a9eef06336f8e153412ec4b8fffdddedaf Student <student@example.invalid> 1794297412 +0300	commit (initial): New file index
+b45c35a9eef06336f8e153412ec4b8fffdddedaf 158abfc660925342cac1d20101b7725c5299e661 Student <student@example.invalid> 1794297412 +0300	commit: Added Header
+158abfc660925342cac1d20101b7725c5299e661 b45c35a9eef06336f8e153412ec4b8fffdddedaf Student <student@example.invalid> 1794297413 +0300	reset: moving to b45c35a9eef06336f8e153412ec4b8fffdddedaf
+b45c35a9eef06336f8e153412ec4b8fffdddedaf ee837f9b925077ff4c0f28384217846e28c732b4 Student <student@example.invalid> 1794297413 +0300	commit: Оформили страницу
+ee837f9b925077ff4c0f28384217846e28c732b4 6da2c12cd644567e165a0cdd251124b2a3b88165 Student <student@example.invalid> 1794297414 +0300	merge article: Merge made by the 'ort' strategy.
+6da2c12cd644567e165a0cdd251124b2a3b88165 f84ca713c8b78445d9ad651d957cb3e2e4e9ddfe Student <student@example.invalid> 1794297414 +0300	commit: Добавили журнал и инструкцию публикации

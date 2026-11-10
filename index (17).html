@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Формы и таблицы Bootstrap</title>
+<link rel="stylesheet" href="../assets/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-5">
+<a href="../index.html">Все задания</a>
+<h1 class="my-4">Компоненты Bootstrap</h1>
+<div class="d-flex flex-wrap gap-2 mb-5">
+<button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Стандартная</button>
+<button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Основная</button>
+<button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Подтвердить</button>
+<button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Уведомление</button>
+<button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Внимание</button>
+<button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Отмена</button>
+<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#requestModal">Ссылка</button>
+</div>
+<h2>Форма входа</h2>
+<form class="demo-form mb-5" style="max-width:540px">
+<label for="email" class="form-label">Email</label>
+<input id="email" class="form-control" type="email" placeholder="Введите email" autocomplete="email" required>
+<div class="form-text mb-3">Пример строки с подсказкой</div>
+<label for="password" class="form-label">Пароль</label>
+<input id="password" class="form-control mb-3" type="password" placeholder="Пароль" pattern="[A-Za-z0-9]{8,}" title="Минимум 8 латинских букв или цифр" autocomplete="current-password" required>
+<div class="form-check mb-3">
+<input type="checkbox" class="form-check-input" id="remember">
+<label for="remember" class="form-check-label">Чекбокс</label>
+</div>
+<button class="btn btn-success">Войти</button>
+<p class="form-result mt-2" role="status">
+</p>
+</form>
+<h2>Строчная форма</h2>
+<form class="demo-form row g-3 align-items-center mb-5">
+<div class="col-auto">
+<label for="inlineEmail" class="form-label">Email</label>
+<input id="inlineEmail" class="form-control" type="email" placeholder="Введите email" required>
+</div>
+<div class="col-auto">
+<label for="inlinePassword" class="form-label">Пароль</label>
+<input id="inlinePassword" class="form-control" type="password" placeholder="Пароль" required>
+</div>
+<div class="col-auto pt-4">
+<button class="btn btn-success">Войти</button>
+</div>
+<p class="form-result" role="status">
+</p>
+</form>
+<h2>Таблица 1</h2>
+<div class="table-responsive mb-4">
+<table class="table table-striped">
+<thead>
+<tr>
+<th scope="col" class="">Имя</th>
+<th scope="col" class="">Фамилия</th>
+<th scope="col" class="">Почта</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="">Иван</td>
+<td class="">Николайчук</td>
+<td class="">ivan@example.com</td>
+</tr>
+<tr>
+<td class="">Мария</td>
+<td class="">Иванова</td>
+<td class="">mary@example.com</td>
+</tr>
+<tr>
+<td class="">Юлия</td>
+<td class="">Петренко</td>
+<td class="">julia@example.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>Таблица 2</h2>
+<div class="table-responsive mb-4">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th scope="col" class="">Имя</th>
+<th scope="col" class="">Фамилия</th>
+<th scope="col" class="">Почта</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="">Иван</td>
+<td class="">Николайчук</td>
+<td class="">ivan@example.com</td>
+</tr>
+<tr>
+<td class="">Мария</td>
+<td class="">Иванова</td>
+<td class="">mary@example.com</td>
+</tr>
+<tr>
+<td class="">Юлия</td>
+<td class="">Петренко</td>
+<td class="">julia@example.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>Таблица 3</h2>
+<div class="table-responsive mb-4">
+<table class="table ">
+<thead>
+<tr>
+<th scope="col" class="table-active">Имя</th>
+<th scope="col" class="table-success">Фамилия</th>
+<th scope="col" class="table-info">Почта</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="table-warning">Иван</td>
+<td class="">Николайчук</td>
+<td class="table-danger">ivan@example.com</td>
+</tr>
+<tr>
+<td class="">Мария</td>
+<td class="">Иванова</td>
+<td class="">mary@example.com</td>
+</tr>
+<tr>
+<td class="">Юлия</td>
+<td class="">Петренко</td>
+<td class="">julia@example.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a class="btn btn-primary" href="cards.html">Страница с карточками</a>
+</main>
+<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h2 class="modal-title fs-5" id="modalTitle">Вход в личный кабинет</h2>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+</button>
+</div>
+<div class="modal-body">
+<form class="demo-form">
+<label for="modalEmail" class="form-label">Email</label>
+<input class="form-control mb-3" id="modalEmail" type="email" autocomplete="email" required>
+<label for="modalPassword" class="form-label">Пароль</label>
+<input class="form-control mb-3" id="modalPassword" type="password" minlength="8" autocomplete="current-password" required>
+<button class="btn btn-primary">Войти</button>
+<p class="form-result mt-3" role="status">
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script src="../assets/bootstrap.bundle.min.js">
+</script>
+<script src="../assets/forms.js">
+</script>
+</body>
+</html>
