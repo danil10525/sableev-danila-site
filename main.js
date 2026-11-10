@@ -1,9 +1,0 @@
-document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{let open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',open);b.textContent=open?'×':'☰';document.getElementById(b.getAttribute('aria-controls')).classList.toggle('open',open)}));
-const dialog=document.querySelector('#order-dialog');let opener;
-document.querySelectorAll('[data-modal]').forEach(b=>b.addEventListener('click',()=>{opener=b;dialog.showModal()}));
-dialog.querySelector('.modal-close').addEventListener('click',()=>dialog.close());
-dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
-dialog.addEventListener('close',()=>opener?.focus());
-const today=new Date();const localDate=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');document.querySelectorAll('input[type=date]').forEach(i=>i.min=localDate);
-document.querySelectorAll('.order-form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();f.querySelector('.result').textContent='Заявка заполнена верно. Это учебная форма: данные никуда не отправлены.'}));
-document.querySelectorAll('.carousel').forEach(c=>{let current=0;const slides=[...c.querySelectorAll('.slide')];function show(n){current=(n+slides.length)%slides.length;slides.forEach((s,i)=>{s.classList.toggle('active',i===current);s.setAttribute('aria-hidden',String(i!==current))});c.querySelector('.slide-status').textContent=`${current+1} / ${slides.length}`};c.querySelector('[data-prev]').addEventListener('click',()=>show(current-1));c.querySelector('[data-next]').addEventListener('click',()=>show(current+1));c.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1)})});
