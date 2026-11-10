@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Расчёт аренды по сменам, подготовка объекта и учебная форма заявки.">
+<meta name="theme-color" content="#1b2c37">
+<title>Условия аренды спецтехники и заявка — ТехноСезон</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="utility">
+<div class="container">
+<span>Нижний Новгород · аренда спецтехники</span>
+<span>Подбор под задачу и сезон</span>
+</div>
+</div>
+<header class="header">
+<div class="container nav">
+<a class="brand" href="index.html">
+<span class="brand-mark" aria-hidden="true">Т</span>
+<span>
+<strong>ТЕХНОСЕЗОН</strong>
+<small>ТЕХНИКА В РАБОТУ</small>
+</span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">☰</button>
+<nav id="main-menu" class="menu">
+<a href="index.html">Главная</a>
+<a href="summer.html">Летние работы</a>
+<a href="winter.html">Зимние работы</a>
+<a href="rent.html" aria-current="page">Условия аренды</a>
+</nav>
+<button class="button" data-modal>Подобрать технику ↗</button>
+</div>
+</header>
+<main>
+<div class="container">
+<div class="crumbs">
+<a href="index.html">Главная</a> / Условия аренды</div>
+<section class="page-intro">
+<span class="eyebrow">Условия и расчёт</span>
+<h1>Аренда начинается<br>с вашей задачи.</h1>
+<p class="lead">Выберите машину, дату и число смен. Форма покажет ориентировочную стоимость по демонстрационному тарифу.</p>
+</section>
+</div>
+<section class="section">
+<div class="container two-col">
+<div class="form-panel">
+<h2>Заявка на подбор</h2>
+<form class="form" data-order-form>
+<label for="page-machine">Техника<select id="page-machine" name="machine">
+<option value="excavator">Гусеничный экскаватор</option>
+<option value="loader">Фронтальный погрузчик</option>
+<option value="roller">Дорожный каток</option>
+<option value="snowplow">Погрузчик со снежным отвалом</option>
+<option value="truck">Самосвал для вывоза снега</option>
+<option value="generator">Дизельный генератор</option>
+</select>
+</label>
+<div class="form-grid">
+<label for="page-date">Начало аренды<input id="page-date" type="date" name="date" required>
+</label>
+<label for="page-days">Количество смен<input id="page-days" type="number" name="days" min="1" max="90" value="1" required>
+</label>
+</div>
+<label for="page-name">Ваше имя<input id="page-name" name="name" autocomplete="name" minlength="2" required>
+</label>
+<label for="page-phone">Телефон<input id="page-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 123-45-67" pattern="\+?[0-9][0-9 \(\)\-]{8,18}" required>
+</label>
+<label for="page-task">Задача и адрес объекта<textarea id="page-task" name="task" placeholder="Что нужно сделать и где">
+</textarea>
+</label>
+<div class="estimate" aria-live="polite">Ориентир за аренду: <strong data-estimate>18 000 ₽</strong>
+<br>
+<span class="micro">Доставка и дополнительные работы не включены.</span>
+</div>
+<label class="consent">
+<input type="checkbox" required>Это учебная форма. Я понимаю, что заявка не отправляется.</label>
+<button class="button">Проверить заявку →</button>
+<p class="form-result" role="status">
+</p>
+</form>
+</div>
+<div>
+<h2>Что входит в расчёт</h2>
+<p>Ориентир — тариф машины, умноженный на количество смен. Смена длится 8 часов. Доставка, дополнительные рейсы и навесное оборудование не включены.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Учебные условия</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Минимальный период</td>
+<td>1 смена</td>
+</tr>
+<tr>
+<td>Продолжительность</td>
+<td>8 часов</td>
+</tr>
+<tr>
+<td>Доставка</td>
+<td>Отдельный расчёт</td>
+</tr>
+<tr>
+<td>Оплата и документы</td>
+<td>До начала аренды</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 style="margin-top:30px">Подготовьте информацию</h3>
+<p>Адрес, описание работ, объём, состояние подъезда и желаемый график. Уточните, нужен ли оператор и какое оборудование требуется.</p>
+<h3>Демонстрационный режим</h3>
+<p>Сайт создан для учебного задания. Форма проверяет поля в браузере и не отправляет данные. Расчёт не является коммерческим предложением.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<a class="brand" href="index.html">
+<strong>ТЕХНОСЕЗОН</strong>
+</a>
+<p>Строительная техника для летних задач и зимнего обслуживания территорий.</p>
+</div>
+<div>
+<b>Каталог</b>
+<a href="summer.html">Для летних работ</a>
+<a href="winter.html">Для зимних работ</a>
+</div>
+<div>
+<b>Аренда</b>
+<a href="rent.html">Условия и заявка</a>
+<a href="../index.html">Все учебные работы</a>
+</div>
+</div>
+<small>Учебный сайт. Техника, характеристики и тарифы приведены как примеры. Реальные заказы не принимаются.</small>
+</div>
+</footer>
+<dialog id="order-dialog" aria-labelledby="dialog-title">
+<button class="modal-close" aria-label="Закрыть">×</button>
+<h2 id="dialog-title">Подобрать технику</h2>
+<p class="micro">Укажите задачу и срок аренды.</p>
+<form class="form" data-order-form>
+<label for="modal-machine">Техника<select id="modal-machine" name="machine">
+<option value="excavator">Гусеничный экскаватор</option>
+<option value="loader">Фронтальный погрузчик</option>
+<option value="roller">Дорожный каток</option>
+<option value="snowplow">Погрузчик со снежным отвалом</option>
+<option value="truck">Самосвал для вывоза снега</option>
+<option value="generator">Дизельный генератор</option>
+</select>
+</label>
+<div class="form-grid">
+<label for="modal-date">Начало аренды<input id="modal-date" type="date" name="date" required>
+</label>
+<label for="modal-days">Количество смен<input id="modal-days" type="number" name="days" min="1" max="90" value="1" required>
+</label>
+</div>
+<label for="modal-name">Ваше имя<input id="modal-name" name="name" autocomplete="name" minlength="2" required>
+</label>
+<label for="modal-phone">Телефон<input id="modal-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 123-45-67" pattern="\+?[0-9][0-9 \(\)\-]{8,18}" required>
+</label>
+<label for="modal-task">Задача и адрес объекта<textarea id="modal-task" name="task" placeholder="Что нужно сделать и где">
+</textarea>
+</label>
+<div class="estimate" aria-live="polite">Ориентир за аренду: <strong data-estimate>18 000 ₽</strong>
+<br>
+<span class="micro">Доставка и дополнительные работы не включены.</span>
+</div>
+<label class="consent">
+<input type="checkbox" required>Это учебная форма. Я понимаю, что заявка не отправляется.</label>
+<button class="button">Проверить заявку →</button>
+<p class="form-result" role="status">
+</p>
+</form>
+</dialog>
+<script src="js/main.js">
+</script>
+</body>
+</html>

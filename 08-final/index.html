@@ -3,182 +3,346 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Торты на заказ в Нижнем Новгороде — Крошка и крем</title>
-<meta name="description" content="Торты на день рождения, свадьбу и семейный праздник. Начинки, вес и оформление на заказ. Учебный сайт кондитерской.">
-<meta name="theme-color" content="#954f58">
-<meta property="og:title" content="Торты на заказ в Нижнем Новгороде — Крошка и крем">
-<meta property="og:description" content="Торты на день рождения, свадьбу и семейный праздник. Начинки, вес и оформление на заказ. Учебный сайт кондитерской.">
-<meta property="og:type" content="website">
+<meta name="description" content="Спецтехника для летних и зимних задач: экскаваторы, погрузчики, катки и вывоз снега. Сезонный каталог.">
+<meta name="theme-color" content="#1b2c37">
+<title>Аренда строительной техники в Нижнем Новгороде — ТехноСезон</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="top-nav">
-<a class="logo" href="index.html">Крошка & крем</a>
-<button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">☰</button>
+<div class="utility">
+<div class="container">
+<span>Нижний Новгород · аренда спецтехники</span>
+<span>Подбор под задачу и сезон</span>
+</div>
+</div>
+<header class="header">
+<div class="container nav">
+<a class="brand" href="index.html">
+<span class="brand-mark" aria-hidden="true">Т</span>
+<span>
+<strong>ТЕХНОСЕЗОН</strong>
+<small>ТЕХНИКА В РАБОТУ</small>
+</span>
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">☰</button>
 <nav id="main-menu" class="menu">
-<a href="index.html">Главная</a>
-<a href="birthday.html">На день рождения</a>
-<a href="wedding.html">На свадьбу</a>
-<a href="order.html">Заказать</a>
+<a href="index.html" aria-current="page">Главная</a>
+<a href="summer.html">Летние работы</a>
+<a href="winter.html">Зимние работы</a>
+<a href="rent.html">Условия аренды</a>
 </nav>
+<button class="button" data-modal>Подобрать технику ↗</button>
+</div>
 </header>
 <main>
+<div class="container">
 <section class="hero">
 <div>
-<span class="eyebrow">Кондитерская · Нижний Новгород</span>
-<h1>Торты на заказ<br>для ваших историй</h1>
-<p class="lead">Нежный бисквит, любимая начинка и оформление, которое хочется рассмотреть. Создаём торты на день рождения, свадьбу и семейные праздники.</p>
+<span class="eyebrow">Аренда строительной техники</span>
+<h1>Своя техника<br>для каждого<br>сезона.</h1>
+<p class="lead">Летом — копать, грузить и строить. Зимой — расчищать, вывозить и поддерживать работу площадки. Выберите сезон — найдите машину под свою задачу.</p>
 <div class="actions">
-<button class="button" data-modal>Подобрать торт →</button>
-<a class="button secondary" href="#catalog">Смотреть коллекцию</a>
+<a class="button" href="#catalog">Выбрать технику ↓</a>
+<a class="button ghost" href="rent.html">Как арендовать</a>
 </div>
-<p class="hint">Индивидуальный декор · от 2 кг · заказ заранее</p>
+<p class="micro">Экскаваторы · погрузчики · катки · самосвалы</p>
 </div>
-<img src="../assets/cake.jpg" alt="Шоколадный праздничный торт">
+<div class="hero-visual">
+<img src="img/excavator.svg" alt="Экскаватор для земляных работ">
+<span class="visual-tag">☀ Летом строим. ❄ Зимой расчищаем.</span>
+</div>
 </section>
-<section id="catalog" class="section">
-<div class="section-intro">
-<span class="eyebrow">Коллекция</span>
-<h2>Повод найдётся.<br>Торт — тоже.</h2>
-<p>Выберите направление, а начинку, размер и детали оформления обсудим отдельно.</p>
+<div class="facts">
+<div>
+<strong>Под задачу</strong>
+<span>от траншеи до уборки снега</span>
 </div>
+<div>
+<strong>Под сезон</strong>
+<span>два каталога в одном месте</span>
+</div>
+<div>
+<strong>Под срок</strong>
+<span>расчёт по сменам</span>
+</div>
+</div>
+</div>
+<section class="section" id="catalog">
+<div class="container">
+<div class="section-head">
+<div>
+<span class="eyebrow">Сезонный каталог</span>
+<h2>Что планируете делать?</h2>
+</div>
+<p>Начните с времени года. Мы покажем технику для характерных сезонных задач.</p>
+</div>
+<div class="season-tabs" role="tablist" aria-label="Сезон работ">
+<button id="tab-summer" role="tab" aria-selected="true" aria-controls="panel-summer" data-season="summer" tabindex="0">☀ Лето</button>
+<button id="tab-winter" role="tab" aria-selected="false" aria-controls="panel-winter" data-season="winter" tabindex="-1">❄ Зима</button>
+</div>
+<section class="season-panel" id="panel-summer" role="tabpanel" aria-labelledby="tab-summer" tabindex="0">
+<p class="catalog-note">Земляные работы, погрузка материалов и подготовка покрытия.</p>
 <div class="cards">
-<article class="card">
-<img src="../assets/birthday.jpg" alt="На день рождения" loading="lazy">
-<div class="card-content">
-<h3>На день рождения</h3>
-<p>Любимые цвета, ягоды и детали, которые рассказывают об имениннике.</p>
-<div class="price">от 2 200 ₽ / кг</div>
-<a class="button secondary" href="birthday.html">Подробнее →</a>
+<article class="card" data-season="summer">
+<div class="card-visual">
+<img src="img/excavator.svg" alt="Иллюстрация: гусеничный экскаватор">
+<span class="badge">Летние работы</span>
+</div>
+<div class="card-body">
+<span class="task">Котлованы и траншеи</span>
+<h3>Гусеничный экскаватор</h3>
+<p>Разработка грунта и подготовка основания на строительной площадке.</p>
+<div class="spec">Масса 20 т · ковш 1 м³</div>
+<div class="card-bottom">
+<div class="price">
+<strong>18 000 ₽</strong>
+<span>за смену · 8 часов</span>
+</div>
+<button class="button" data-modal data-machine="excavator">Выбрать ↗</button>
+</div>
 </div>
 </article>
-<article class="card">
-<img src="../assets/wedding.jpg" alt="На свадьбу" loading="lazy">
-<div class="card-content">
-<h3>На свадьбу</h3>
-<p>Одноярусные и многоярусные торты для самого важного дня.</p>
-<div class="price">от 2 600 ₽ / кг</div>
-<a class="button secondary" href="wedding.html">Подробнее →</a>
+<article class="card" data-season="summer">
+<div class="card-visual">
+<img src="img/loader.svg" alt="Иллюстрация: фронтальный погрузчик">
+<span class="badge">Летние работы</span>
+</div>
+<div class="card-body">
+<span class="task">Погрузка материалов</span>
+<h3>Фронтальный погрузчик</h3>
+<p>Перемещение песка, щебня и грунта, подготовка территории.</p>
+<div class="spec">Ковш 2 м³ · грузоподъёмность 3 т</div>
+<div class="card-bottom">
+<div class="price">
+<strong>15 000 ₽</strong>
+<span>за смену · 8 часов</span>
+</div>
+<button class="button" data-modal data-machine="loader">Выбрать ↗</button>
+</div>
 </div>
 </article>
-<article class="card">
-<img src="../assets/cake.jpg" alt="Для близких" loading="lazy">
-<div class="card-content">
-<h3>Для близких</h3>
-<p>Небольшой торт к семейному ужину или встрече с друзьями.</p>
-<div class="price">от 2 000 ₽ / кг</div>
-<a class="button secondary" href="order.html">Подробнее →</a>
+<article class="card" data-season="summer">
+<div class="card-visual">
+<img src="img/roller.svg" alt="Иллюстрация: дорожный каток">
+<span class="badge">Летние работы</span>
+</div>
+<div class="card-body">
+<span class="task">Уплотнение покрытий</span>
+<h3>Дорожный каток</h3>
+<p>Уплотнение основания и асфальта на дорогах и площадках.</p>
+<div class="spec">Масса 7 т · валец 1,5 м</div>
+<div class="card-bottom">
+<div class="price">
+<strong>16 000 ₽</strong>
+<span>за смену · 8 часов</span>
+</div>
+<button class="button" data-modal data-machine="roller">Выбрать ↗</button>
+</div>
 </div>
 </article>
 </div>
 </section>
-<section class="band">
-<div class="section">
-<h2>С заботой о каждой детали</h2>
-<div class="features">
+<section class="season-panel" id="panel-winter" role="tabpanel" aria-labelledby="tab-winter" tabindex="0" hidden>
+<p class="catalog-note">Расчистка территории, вывоз снега и питание оборудования.</p>
+<div class="cards">
+<article class="card" data-season="winter">
+<div class="card-visual">
+<img src="img/snowplow.svg" alt="Иллюстрация: погрузчик со снежным отвалом">
+<span class="badge">Зимние работы</span>
+</div>
+<div class="card-body">
+<span class="task">Уборка снега</span>
+<h3>Погрузчик со снежным отвалом</h3>
+<p>Расчистка парковок, дворов и подъездных путей после снегопада.</p>
+<div class="spec">Отвал 2,5 м · полный привод</div>
+<div class="card-bottom">
+<div class="price">
+<strong>14 000 ₽</strong>
+<span>за смену · 8 часов</span>
+</div>
+<button class="button" data-modal data-machine="snowplow">Выбрать ↗</button>
+</div>
+</div>
+</article>
+<article class="card" data-season="winter">
+<div class="card-visual">
+<img src="img/truck.svg" alt="Иллюстрация: самосвал для вывоза снега">
+<span class="badge">Зимние работы</span>
+</div>
+<div class="card-body">
+<span class="task">Вывоз снега</span>
+<h3>Самосвал для вывоза снега</h3>
+<p>Совместно с погрузчиком: вывоз собранного снега с территории.</p>
+<div class="spec">Кузов 15 м³ · грузоподъёмность 20 т</div>
+<div class="card-bottom">
+<div class="price">
+<strong>17 000 ₽</strong>
+<span>за смену · 8 часов</span>
+</div>
+<button class="button" data-modal data-machine="truck">Выбрать ↗</button>
+</div>
+</div>
+</article>
+<article class="card" data-season="winter">
+<div class="card-visual">
+<img src="img/generator.svg" alt="Иллюстрация: дизельный генератор">
+<span class="badge">Зимние работы</span>
+</div>
+<div class="card-body">
+<span class="task">Питание оборудования</span>
+<h3>Дизельный генератор</h3>
+<p>Временное электроснабжение площадки. Подбор мощности по нагрузке.</p>
+<div class="spec">Мощность 50 кВт · 380 В</div>
+<div class="card-bottom">
+<div class="price">
+<strong>6 000 ₽</strong>
+<span>за смену · 8 часов</span>
+</div>
+<button class="button" data-modal data-machine="generator">Выбрать ↗</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<div class="catalog-footer">
+<p>Учебные тарифы за смену 8 часов. Доставка и дополнительные работы не включены. Подбор зависит от доступа к объекту и объёма работ.</p>
+<a class="button ghost" id="season-details" href="summer.html">Подробнее о летних работах →</a>
+</div>
+</div>
+</section>
+<section class="band section">
+<div class="container">
+<span class="eyebrow">Порядок работы</span>
+<h2>От задачи до выхода на объект</h2>
+<div class="steps">
 <article>
-<b>01</b>
-<h3>Понятный состав</h3>
-<p>Бисквит, крем, фрукты и ягоды. Состав и возможные аллергены обсуждаются до заказа.</p>
+<span class="step-number">01 /</span>
+<h3>Опишите работу</h3>
+<p>Укажите адрес, объём и состояние площадки. Для уборки снега важны площадь и возможность вывоза.</p>
 </article>
 <article>
-<b>02</b>
-<h3>Ваш характер</h3>
-<p>Подбираем цвет, надпись и декор под повод. Можно принести свои примеры оформления.</p>
+<span class="step-number">02 /</span>
+<h3>Подберите машину</h3>
+<p>Сравните тип техники и рабочие параметры. Уточните навесное оборудование и число смен.</p>
 </article>
 <article>
-<b>03</b>
-<h3>Удобный размер</h3>
-<p>Рассчитываем вес по числу гостей и формату праздника, чтобы всем хватило десерта.</p>
+<span class="step-number">03 /</span>
+<h3>Согласуйте условия</h3>
+<p>Зафиксируйте доставку, график, состав работ и итоговую стоимость до начала аренды.</p>
 </article>
 </div>
 </div>
 </section>
-<section class="section" aria-label="Идеи оформления">
-<h2>У каждого праздника свой вкус</h2>
-<div class="carousel" aria-roledescription="карусель">
-<div class="slides">
+<section class="section">
+<div class="container">
+<h2>Разные задачи — одна площадка</h2>
+<div class="carousel" aria-label="Примеры применения техники" aria-roledescription="карусель">
 <article class="slide active" aria-hidden="false">
-<img src="../assets/cake.jpg" alt="Маленькая радость">
-<div class="slide-text">
-<h2>Маленькая радость</h2>
-<p>Кремовый торт для уютного вечера с близкими.</p>
+<div>
+<h3>Подготовить участок летом</h3>
+<p>Разработка грунта и подготовка котлована. До начала работ проверьте расположение подземных коммуникаций.</p>
+<button class="button" data-modal>Обсудить задачу</button>
 </div>
+<img src="img/excavator.svg" alt="Подготовить участок летом">
 </article>
 <article class="slide " aria-hidden="true">
-<img src="../assets/birthday.jpg" alt="День, который запомнится">
-<div class="slide-text">
-<h2>День, который запомнится</h2>
-<p>Яркий декор и любимая начинка именинника.</p>
+<div>
+<h3>Открыть проезд зимой</h3>
+<p>Расчистка подъездов к зданиям. Продумайте место складирования или вывоз снега.</p>
+<button class="button" data-modal>Обсудить задачу</button>
 </div>
+<img src="img/snowplow.svg" alt="Открыть проезд зимой">
 </article>
 <article class="slide " aria-hidden="true">
-<img src="../assets/wedding.jpg" alt="Начало вашей истории">
-<div class="slide-text">
-<h2>Начало вашей истории</h2>
-<p>Нежные оттенки и аккуратные детали для свадьбы.</p>
+<div>
+<h3>Подготовить основание</h3>
+<p>Уплотнение после планировки. Тип техники зависит от материала и толщины слоя.</p>
+<button class="button" data-modal>Обсудить задачу</button>
 </div>
+<img src="img/roller.svg" alt="Подготовить основание">
 </article>
-</div>
-<div class="controls">
+<div class="carousel-controls">
 <button data-prev aria-label="Предыдущий слайд">←</button>
 <span class="slide-status" aria-live="polite">1 / 3</span>
 <button data-next aria-label="Следующий слайд">→</button>
 </div>
 </div>
-</section>
-<section class="section two-col">
-<div>
-<h2>Как выбрать торт на заказ</h2>
-<p>Сначала определите количество гостей. Для праздничного ужина можно ориентироваться на порцию 150–200 г на человека. Затем выберите начинку: шоколадную, ванильную или ягодную.</p>
-<p>Оформление зависит от повода. Для детского дня рождения подойдут яркие цвета, для свадьбы — спокойная палитра и аккуратный декор. Если среди гостей есть аллергики, состав нужно обсудить заранее.</p>
-<p>Торты на заказ в Нижнем Новгороде удобно планировать за несколько дней до события. Сложный свадебный декор требует больше времени на подготовку.</p>
-<a href="order.html" class="button">Как оформить заказ</a>
 </div>
-<img src="../assets/birthday.jpg" alt="Торт для праздничного стола" loading="lazy">
+</section>
+<section class="section">
+<div class="container two-col">
+<div>
+<h2>Аренда техники вместо покупки парка</h2>
+<p>Аренда строительной техники в Нижнем Новгороде подходит для разовых и сезонных работ. Экскаватор нужен для разработки грунта, погрузчик — для перемещения материалов, каток — для уплотнения основания.</p>
+<p>Зимой важно сохранить проезд и доступ к зданиям. На первый план выходят снегоуборочная техника и самосвалы. Переключатель сезона помогает перейти к подходящей группе машин.</p>
+</div>
+<div>
+<h2>Как сравнивать варианты</h2>
+<p>Ориентируйтесь на объём работ, условия подъезда, ширину проезда и длительность аренды. Стоимость смены не всегда включает доставку и дополнительные операции.</p>
+<p>Характеристики на сайте — учебные примеры. Для реального объекта нужны конкретная модель и согласование технических параметров.</p>
+<a class="button ghost" href="rent.html">Посмотреть условия →</a>
+</div>
+</div>
 </section>
 </main>
-<footer>
+<footer class="footer">
+<div class="container">
 <div class="footer-grid">
 <div>
-<a class="logo" href="index.html">Крошка & крем</a>
-<p>Торты для больших событий<br>и маленьких радостей.</p>
+<a class="brand" href="index.html">
+<strong>ТЕХНОСЕЗОН</strong>
+</a>
+<p>Строительная техника для летних задач и зимнего обслуживания территорий.</p>
 </div>
 <div>
-<a href="birthday.html">На день рождения</a>
-<a href="wedding.html">На свадьбу</a>
+<b>Каталог</b>
+<a href="summer.html">Для летних работ</a>
+<a href="winter.html">Для зимних работ</a>
 </div>
 <div>
-<a href="order.html">Как заказать</a>
-<button class="button secondary" data-modal>Обсудить торт</button>
+<b>Аренда</b>
+<a href="rent.html">Условия и заявка</a>
+<a href="../index.html">Все учебные работы</a>
 </div>
 </div>
-<small>Учебный проект. Цены и предложение демонстрационные. Заказы не принимаются.</small>
+<small>Учебный сайт. Техника, характеристики и тарифы приведены как примеры. Реальные заказы не принимаются.</small>
+</div>
 </footer>
 <dialog id="order-dialog" aria-labelledby="dialog-title">
 <button class="modal-close" aria-label="Закрыть">×</button>
-<h2 id="dialog-title">Обсудим ваш торт</h2>
-<p class="hint">Заполните пожелания. Форма работает в демонстрационном режиме.</p>
-<form class="order-form">
-<label for="modal-name">Ваше имя<input id="modal-name" name="name" autocomplete="name" minlength="2" required>
-</label>
-<label for="modal-phone">Телефон<input id="modal-phone" name="phone" type="tel" autocomplete="tel" pattern="\+?[0-9][0-9 \(\)\-]{8,18}" placeholder="+7 999 123-45-67" required>
-</label>
-<label for="modal-type">Какой торт нужен<select id="modal-type" name="type">
-<option>На день рождения</option>
-<option>На свадьбу</option>
-<option>Для другого праздника</option>
+<h2 id="dialog-title">Подобрать технику</h2>
+<p class="micro">Укажите задачу и срок аренды.</p>
+<form class="form" data-order-form>
+<label for="modal-machine">Техника<select id="modal-machine" name="machine">
+<option value="excavator">Гусеничный экскаватор</option>
+<option value="loader">Фронтальный погрузчик</option>
+<option value="roller">Дорожный каток</option>
+<option value="snowplow">Погрузчик со снежным отвалом</option>
+<option value="truck">Самосвал для вывоза снега</option>
+<option value="generator">Дизельный генератор</option>
 </select>
 </label>
-<label for="modal-date">Дата праздника<input id="modal-date" name="date" type="date" required>
+<div class="form-grid">
+<label for="modal-date">Начало аренды<input id="modal-date" type="date" name="date" required>
 </label>
-<label for="modal-comment">Пожелания<textarea id="modal-comment" name="comment" placeholder="Вес, начинка, оформление">
+<label for="modal-days">Количество смен<input id="modal-days" type="number" name="days" min="1" max="90" value="1" required>
+</label>
+</div>
+<label for="modal-name">Ваше имя<input id="modal-name" name="name" autocomplete="name" minlength="2" required>
+</label>
+<label for="modal-phone">Телефон<input id="modal-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 123-45-67" pattern="\+?[0-9][0-9 \(\)\-]{8,18}" required>
+</label>
+<label for="modal-task">Задача и адрес объекта<textarea id="modal-task" name="task" placeholder="Что нужно сделать и где">
 </textarea>
 </label>
+<div class="estimate" aria-live="polite">Ориентир за аренду: <strong data-estimate>18 000 ₽</strong>
+<br>
+<span class="micro">Доставка и дополнительные работы не включены.</span>
+</div>
 <label class="consent">
-<input type="checkbox" required>Я понимаю, что это учебная форма без отправки данных.</label>
-<button class="button">Проверить заявку</button>
-<p class="result" role="status">
+<input type="checkbox" required>Это учебная форма. Я понимаю, что заявка не отправляется.</label>
+<button class="button">Проверить заявку →</button>
+<p class="form-result" role="status">
 </p>
 </form>
 </dialog>
