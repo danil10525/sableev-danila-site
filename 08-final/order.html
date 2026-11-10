@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Заказать торт — условия и форма — Крошка и крем</title>
+<meta name="description" content="Как заказать торт в Нижнем Новгороде: сроки, вес, демонстрационные цены и форма пожеланий.">
+<meta name="theme-color" content="#954f58">
+<meta property="og:title" content="Заказать торт — условия и форма — Крошка и крем">
+<meta property="og:description" content="Как заказать торт в Нижнем Новгороде: сроки, вес, демонстрационные цены и форма пожеланий.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top-nav">
+<a class="logo" href="index.html">Крошка & крем</a>
+<button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">☰</button>
+<nav id="main-menu" class="menu">
+<a href="index.html">Главная</a>
+<a href="birthday.html">На день рождения</a>
+<a href="wedding.html">На свадьбу</a>
+<a href="order.html">Заказать</a>
+</nav>
+</header>
+<main>
+<div class="crumbs">
+<a href="index.html">Главная</a> / Как заказать</div>
+<section class="section">
+<span class="eyebrow">От идеи до праздничного стола</span>
+<h1>Как заказать торт</h1>
+<p class="lead">Подготовьте дату, количество гостей и пример оформления. Эти сведения помогают определить вес, начинку и стоимость.</p>
+<div class="two-col">
+<div>
+<h2>Оставьте пожелания</h2>
+<form class="order-form">
+<label for="page-name">Ваше имя<input id="page-name" name="name" autocomplete="name" minlength="2" required>
+</label>
+<label for="page-phone">Телефон<input id="page-phone" name="phone" type="tel" autocomplete="tel" pattern="\+?[0-9][0-9 \(\)\-]{8,18}" placeholder="+7 999 123-45-67" required>
+</label>
+<label for="page-type">Какой торт нужен<select id="page-type" name="type">
+<option>На день рождения</option>
+<option>На свадьбу</option>
+<option>Для другого праздника</option>
+</select>
+</label>
+<label for="page-date">Дата праздника<input id="page-date" name="date" type="date" required>
+</label>
+<label for="page-comment">Пожелания<textarea id="page-comment" name="comment" placeholder="Вес, начинка, оформление">
+</textarea>
+</label>
+<label class="consent">
+<input type="checkbox" required>Я понимаю, что это учебная форма без отправки данных.</label>
+<button class="button">Проверить заявку</button>
+<p class="result" role="status">
+</p>
+</form>
+</div>
+<div>
+<h2>Условия</h2>
+<p>Учебный проект показывает, как может работать сайт небольшой кондитерской. Форма проверяет введённые данные в браузере и не отправляет их на сервер.</p>
+<p>Для обычного торта рекомендуемый запас времени — от 5 дней, для свадебного — от 2 недель. Точные сроки зависят от загрузки.</p>
+<h3>Ориентиры стоимости</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Вид торта</th>
+<th>Минимальный вес</th>
+<th>Цена за кг</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Семейный</td>
+<td>2 кг</td>
+<td>от 2 000 ₽</td>
+</tr>
+<tr>
+<td>На день рождения</td>
+<td>2 кг</td>
+<td>от 2 200 ₽</td>
+</tr>
+<tr>
+<td>Свадебный</td>
+<td>3 кг</td>
+<td>от 2 600 ₽</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="hint">Демонстрационные цены. Декор, доставка и особый состав рассчитываются отдельно.</p>
+<h3>Хранение и перевозка</h3>
+<p>Коробку ставят на ровную поверхность. Торт перевозят без резких наклонов и хранят в холодильнике по рекомендациям кондитера.</p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-grid">
+<div>
+<a class="logo" href="index.html">Крошка & крем</a>
+<p>Торты для больших событий<br>и маленьких радостей.</p>
+</div>
+<div>
+<a href="birthday.html">На день рождения</a>
+<a href="wedding.html">На свадьбу</a>
+</div>
+<div>
+<a href="order.html">Как заказать</a>
+<button class="button secondary" data-modal>Обсудить торт</button>
+</div>
+</div>
+<small>Учебный проект. Цены и предложение демонстрационные. Заказы не принимаются.</small>
+</footer>
+<dialog id="order-dialog" aria-labelledby="dialog-title">
+<button class="modal-close" aria-label="Закрыть">×</button>
+<h2 id="dialog-title">Обсудим ваш торт</h2>
+<p class="hint">Заполните пожелания. Форма работает в демонстрационном режиме.</p>
+<form class="order-form">
+<label for="modal-name">Ваше имя<input id="modal-name" name="name" autocomplete="name" minlength="2" required>
+</label>
+<label for="modal-phone">Телефон<input id="modal-phone" name="phone" type="tel" autocomplete="tel" pattern="\+?[0-9][0-9 \(\)\-]{8,18}" placeholder="+7 999 123-45-67" required>
+</label>
+<label for="modal-type">Какой торт нужен<select id="modal-type" name="type">
+<option>На день рождения</option>
+<option>На свадьбу</option>
+<option>Для другого праздника</option>
+</select>
+</label>
+<label for="modal-date">Дата праздника<input id="modal-date" name="date" type="date" required>
+</label>
+<label for="modal-comment">Пожелания<textarea id="modal-comment" name="comment" placeholder="Вес, начинка, оформление">
+</textarea>
+</label>
+<label class="consent">
+<input type="checkbox" required>Я понимаю, что это учебная форма без отправки данных.</label>
+<button class="button">Проверить заявку</button>
+<p class="result" role="status">
+</p>
+</form>
+</dialog>
+<script src="js/main.js">
+</script>
+</body>
+</html>
